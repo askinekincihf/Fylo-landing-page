@@ -1,0 +1,112 @@
+/* General Rules */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;#
+    text-decoration: none; 
+    list-style-type: none;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-around;
+    height: 10vh;
+    /* width: 100%; */
+    padding: 1rem;
+    padding-top: 2rem;
+    border: 1px solid rgb(215, 211, 228);
+    background: rgb(239, 248, 248);
+    /* position: fixed; */
+}
+
+.icon {
+    margin-left: 1rem;
+    vertical-align: center;
+}
+
+.hamburger-icon img:hover {
+    font-size: 2rem;
+    transition: all 0.4s ease;
+}
+
+.icon img {
+    width: 100%;
+}
+
+.navbar {
+    width: 100%;
+    display: inline-flex;
+    justify-content: flex-end;
+}
+
+.hamburger-icon {
+    margin-right: 2rem;
+}
+
+.menu {
+    display: none;
+}
+
+
+/* Main */
+main {
+    /* height: 70vh; */
+}
+
+/* Hero section */
+
+.hero {
+}
+
+.bg-img {
+    /* position: relative; */
+    /* top: 18vh; */
+    /* height: 40vh; */
+    /* background: url("/images/illustration-2.svg") no-repeat; */
+    /* background-size: cover; */
+    /* background-origin: border-box; */
+    width: 100%;
+}
+
+.bg-img img {
+    /* display: block; */
+    /* position: relative; */
+    /* top:10vh; */
+    width: 100%;
+    /* height: 100vh; */
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: space-between; */
+    margin: 1.5rem;
+}
+
+.hero-content h1, p, input {
+margin-bottom: 1rem;
+text-align: center;
+/* font-size: 1.5rem; */
+}
+
+.hero-content input, button {
+    width: 60%;
+    align-self: center;
+    padding: 0.5rem;
+}
+
+#email {
+    text-align: left;
+    border: 1px solid grey;
+}
+
+.hero-content-btn {
+    background-color: rgb(35, 35, 194);
+    color: #fff;
+    text-align: center;
+}
+
+
+
