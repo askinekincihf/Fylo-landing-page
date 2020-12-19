@@ -7,6 +7,10 @@
     list-style-type: none;
 }
 
+body {
+    font-family: sans-serif;
+}
+
 /* Header */
 header {
     display: flex;
@@ -84,6 +88,7 @@ header {
 #email {
     text-align: left;
     border: 1px solid grey;
+    border-radius: 5px;
 }
 
 .hero-content-input-btn {
@@ -96,7 +101,10 @@ header {
     color: #fff;
     text-align: center;
     cursor: pointer;
+    border-radius: 5px;
 }
+
+/* Section-two */
 
 .section-two {
     display: flex;
@@ -158,7 +166,7 @@ blockquote::after {
 
 /* Section-three */
 
-.section-three-content {
+.section-three {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -166,14 +174,13 @@ blockquote::after {
     background-color: aqua;
 }
 
-.section-three-content h1, p, input {
+.section-three h1, p, input {
 margin-bottom: 1rem;
 text-align: center;
 }
 
-.section-three-content input, button {
-    width: 60%;
-    align-self: center;
+.section-three input, button {
+    width: 50%;
     padding: 0.5rem;
 }
 
@@ -182,13 +189,17 @@ text-align: center;
     color: #fff;
     text-align: center;
     cursor: pointer;
+    border-radius: 5px;
+}
+
+.section-three-content-input-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Footer */
-
-* {
-    /* border: 1px solid green; */
-}
 
 footer {
     background-color: rgb(30, 30, 180);
@@ -207,8 +218,8 @@ footer {
     margin-bottom: 1rem;;
 }
 
-.footer-container > img {
-    width: 15rem;
+.footer-container-img img {
+    width: 10rem;
     margin-bottom: 3rem;
     cursor: pointer;
 }
@@ -228,7 +239,6 @@ footer {
 }
 
 .footer-phone p, .footer-mail p {
-    /* width: 100%; */
     margin: 0;
     text-align: left;
 }
@@ -263,14 +273,13 @@ footer li:hover {
     color: coral;
 }
 
-.social-media {
-    /* border: 1px solid green; */
-}
-
 .social-media ul {
     display: flex;
-    justify-content: center;
-    /* width: 50%; */   
+    justify-content: center;  
+}
+
+.social-media a:hover {
+    font-size: 4rem;
 }
 
 .social-media img {
@@ -283,14 +292,50 @@ footer li:hover {
     cursor: pointer;
 }
 
-.attribution a {
-    color: white;
+footer .attribution a {
+    color: rgb(221, 221, 83);
     text-decoration: none;
 }
 
 /* Responsive Rules */
 
 @media screen and (min-width: 900px) {
+    
+    /* Header */
+
+    .hamburger-icon {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        width: 18rem;
+        margin-right: 1rem;
+    }
+    
+    .menu ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .menu a {
+        text-decoration: none;
+        font-size: 1.3rem;
+        cursor: pointer;
+    }
+
+    .menu a:hover {
+        font-size: 1.5rem;
+        color: coral;
+        transition: all 0.4s ease;
+    }
+
+    /* Main */
+
+    /* Section One */
 
     .hero {
         display: flex;
@@ -317,27 +362,86 @@ footer li:hover {
     .hero-content-input-btn {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        width: 25;
+        justify-content: space-between;
+    }
+
+    .hero-content-btn {
+        width: 25%;
     }
     
     #email {
         margin: 0;
-        /* flex-grow: 1; */
     }
 
+    /* Section Two  */
 
     .section-two {
         display: flex;
         flex-direction: row;
+        margin:2rem 3rem; 
     }
 
-    .img2 {
-        order: 2
+    .section-two-img {
+        order: 2;
     }
 
-    .section-two-content, .blockquote {
+    /* Section-three */
 
+    .section-three {
+        display: flex;
+        flex-direction: row;
     }
+    .section-three-content h1 {
+        text-align: left;
+    }
+
+    .section-three-content {
+        padding-left: 2rem;
+        flex-shrink: 1.5;
+    }
+
+    .section-three-content-input-btn {
+        width: 100%;
+    }
+
+    .section-three-content-input-btn input {
+        width: 60%;
+        margin-left: 2rem;
+    }
+
+    .section-three-content-btn {
+        margin-top: 1rem;
+        width: 30%;
+    }
+
+    /* Footer */
+    
+    .footer-wrapper {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer-content {
+        width: 40rem;
+        display: flex;
+        justify-content: space-around;
+        margin-left: 2rem;
+    }
+
+    .footer-phone-mail {
+        width: 20%;
+    }
+
+    .footer-wrapper p {
+        margin-left: 1rem;
+    }
+
+    .social-media img {
+        width: 1rem;
+    }
+
+    .social-media a:hover {
+        font-size: 3rem;
+    }
+
 }
