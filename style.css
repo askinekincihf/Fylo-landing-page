@@ -11,8 +11,8 @@
 header {
     display: flex;
     justify-content: space-around;
-    height: 10vh;
-    /* width: 100%; */
+    /* height: 10vh; */
+    width: 100%;
     padding: 1rem;
     padding-top: 2rem;
     border: 1px solid rgb(215, 211, 228);
@@ -53,7 +53,7 @@ header {
 
 /* Main */
 main {
-    /* height: 70vh; */
+    width: 100%;
 }
 
 /* Hero section */
@@ -62,22 +62,8 @@ main {
     margin-bottom: 2rem;
 }
 
-.bg-img {
-    /* position: relative; */
-    /* top: 18vh; */
-    /* height: 40vh; */
-    /* background: url("/images/illustration-2.svg") no-repeat; */
-    /* background-size: cover; */
-    /* background-origin: border-box; */
-    /* width: 100%; */
-}
-
 .bg-img img {
-    /* display: block; */
-    /* position: relative; */
-    /* top:10vh; */
     width: 100%;
-    /* height: 100vh; */
 }
 
 .hero-content {
@@ -88,8 +74,8 @@ main {
 }
 
 .hero-content h1, p, input {
-margin-bottom: 1rem;
-text-align: center;
+    margin-bottom: 1rem;
+    text-align: center;
 }
 
 .hero-content input, button {
@@ -198,24 +184,105 @@ text-align: center;
 
 /* Footer */
 
+* {
+    /* border: 1px solid green; */
+}
+
+footer {
+    background-color: rgb(30, 30, 180);
+    color: white;
+    
+}
+
 .footer-container {
     display: flex;
     flex-direction: column;
     padding: 3rem;
-    background-color: rgb(30, 30, 180);
-    color: white;
 }
 
-.footer-container img {
-    width: 50%;
+.footer-phone, .footer-mail,
+.footer-content {
+    margin-bottom: 1rem;;
 }
 
-.footer-phone, .footer-email {
+.footer-container > img {
+    width: 15rem;
+    margin-bottom: 3rem;
+    cursor: pointer;
+}
+
+.footer-phone, .footer-mail {
     display: flex;
-    width: 100%;
+    align-items: center;
+}
 
+.footer-phone {
+    margin-bottom: 2rem;
 }
 
 .footer-phone img, .footer-mail img {
-    width: 10%;
+    width: 2rem;
+    cursor: pointer;
+}
+
+.footer-phone p, .footer-mail p {
+    /* width: 100%; */
+    margin: 0;
+    text-align: left;
+}
+
+.footer-mail {
+    margin-bottom: 3rem;
+}
+
+.footer-content-one, 
+.footer-content-two {
+    margin-bottom: 2rem;
+    line-height: 2rem;
+}
+
+.footer-content a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.footer-content li {
+    cursor: pointer;
+} 
+
+footer li:hover {
+    font-size: 1.2rem;
+    color: bisque;
+}
+
+.footer-content a:hover {
+    font-size: 1.4rem;
+    color: coral;
+}
+
+.social-media {
+    /* border: 1px solid green; */
+}
+
+.social-media ul {
+    display: flex;
+    justify-content: center;
+    /* width: 50%; */   
+}
+
+.social-media img {
+    width: 2rem;
+    padding: 0.6rem;
+    margin-left: 2rem;
+    border: 1px solid rgb(151, 92, 92);
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+}
+
+.attribution a {
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
 }
