@@ -12,7 +12,7 @@ header {
     display: flex;
     justify-content: space-around;
     /* height: 10vh; */
-    width: 100%;
+    /* width: 100%; */
     padding: 1rem;
     padding-top: 2rem;
     border: 1px solid rgb(215, 211, 228);
@@ -59,7 +59,7 @@ header {
     margin-bottom: 2rem;
 }
 
-.bg-img img {
+.hero-img img {
     width: 100%;
 }
 
@@ -84,6 +84,11 @@ header {
 #email {
     text-align: left;
     border: 1px solid grey;
+}
+
+.hero-content-input-btn {
+    display: flex;
+    flex-direction: column;
 }
 
 .hero-content-btn {
@@ -281,4 +286,58 @@ footer li:hover {
 .attribution a {
     color: white;
     text-decoration: none;
+}
+
+/* Responsive Rules */
+
+@media screen and (min-width: 900px) {
+
+    .hero {
+        display: flex;
+        margin:2rem 3rem;
+    }
+
+    .hero-img {
+        order: 1;
+    }
+
+    .hero-content {
+        justify-content: center;
+    }
+
+    .hero-content h1 {
+        font-size: 1.5em;
+    }
+
+    .hero-content h1, p {
+        text-align: left;
+        text-indent: 0;
+    }
+
+    .hero-content-input-btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 25;
+    }
+    
+    #email {
+        margin: 0;
+        /* flex-grow: 1; */
+    }
+
+
+    .section-two {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .img2 {
+        order: 2
+    }
+
+    .section-two-content, .blockquote {
+
+    }
 }
